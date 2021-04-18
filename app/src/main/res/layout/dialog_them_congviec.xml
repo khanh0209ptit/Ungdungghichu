@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvThemCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Them cong viec"
+        android:textSize="20sp">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtthemCV"
+        android:layout_below="@id/tvThemCV"
+        android:hint="Nhap cv can them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtthemCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btnThem"
+            android:text="Them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnHuy"
+            android:text="Huy"
+            android:layout_toRightOf="@id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>
